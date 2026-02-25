@@ -163,46 +163,6 @@ body {
   }
 }
 
-/* Footer */
-footer {
-  background-color: #111;
-  padding: 3rem 1rem;
-}
-
-footer h3 {
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-  color: #b3a3ff;
-}
-
-footer .email-link {
-  display: inline-block;
-  margin: 1rem 0;
-  color: #7a5cff;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-footer .email-link:hover {
-  text-decoration: underline;
-}
-
-footer .copyright {
-  margin-top: 1.5rem;
-  font-size: 0.9rem;
-  color: #777;
-}
-
-/* Responsive */
-@media (max-width: 600px) {
-  .hero h2 {
-    font-size: 1.6rem;
-  }
-
-  .cta-button {
-    width: 80%;
-  }
-}
 /* --- Services Section --- */
 
 .services {
@@ -253,5 +213,72 @@ footer .copyright {
 
 .service-card:hover {
   transform: translateY(-6px);
-  border-color: #5ddcff; /* subtle highlight on hover */
+  border-color: #5ddcff;
+}
+
+/* --- Footer --- */
+
+footer {
+  background-color: #111;
+  padding: 3rem 1rem;
+}
+
+footer h3 {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #b3a3ff;
+}
+
+/* Contact Info (Phone + Email) */
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem 0;
+  gap: 0.6rem;
+}
+
+.phone-link {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1.15rem;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+}
+
+.phone-link:hover {
+  color: #7a5cff;
+  text-decoration: underline;
+}
+
+footer .email-link {
+  display: inline-block;
+  color: #7a5cff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+footer .email-link:hover {
+  text-decoration: underline;
+}
+
+footer .copyright {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* Responsive */
+
+@media (max-width: 600px) {
+  .hero h2 {
+    font-size: 1.6rem;
+  }
+
+  .cta-button {
+    width: 80%;
+  }
 }
