@@ -99,12 +99,12 @@
   </div>
   <p class="copyright">© 2026 Sky Point Systems. All rights reserved.</p>
 </footer>
-  <script>
-  function toggleSnapshotDetails() {
-    const details = document.getElementById('snapshot-details');
-    const btn = document.querySelector('.learn-more-btn');
+<script>
+  function toggleDetails(button) {
+    const targetId = button.getAttribute('data-target');
+    const details = document.getElementById(targetId);
     details.classList.toggle('open');
-    btn.textContent = details.classList.contains('open') ? 'Show Less' : 'Learn More';
+    button.textContent = details.classList.contains('open') ? 'Show Less' : 'Learn More';
   }
 </script>
 </body>
